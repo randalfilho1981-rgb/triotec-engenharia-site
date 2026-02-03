@@ -1,0 +1,1 @@
+(Include the earlier instructions about using the SVGs, generating PNGs and favicons, and basic usage.)

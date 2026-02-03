@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - file: "content/home.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Introdução", name: "intro", widget: "text"}
+
+  - name: "projects"
+    label: "Projetos"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Imagem", name: "thumbnail", widget: "image"}
+      - {label: "Descrição", name: "body", widget: "markdown"}

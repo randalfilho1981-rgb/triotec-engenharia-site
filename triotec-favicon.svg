@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Triotec favicon">
+  <rect width="64" height="64" rx="8" fill="#122A24"/>
+  <g transform="translate(10,12)" fill="#E7E3DA">
+    <rect x="0" y="0" width="4" height="28" rx="1"></rect>
+    <rect x="8" y="0" width="4" height="28" rx="1"></rect>
+    <rect x="16" y="0" width="4" height="28" rx="1"></rect>
+    <rect x="28" y="4" width="12" height="4" rx="1"></rect>
+    <rect x="34" y="8" width="4" height="18" rx="1"></rect>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Triotec Engenharia — Home</title>
+  <meta name="description" content="Triotec Engenharia — Engenharia, Construções, Reformas e Manutenções em Ribeirão Preto - SP" />
+  <link rel="icon" type="image/svg+xml" href="/triotec-favicon.svg">
+  <link rel="stylesheet" href="/triotec-colors.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="/triotec-logo.svg" alt="Triotec Engenharia" class="logo-svg">
+    <nav style="margin-left:auto;">
+      <a href="#contato" style="color:var(--brand-cream); text-decoration:none;">Contato</a>
+    </nav>
+  </header>
+
+  <main style="padding:40px;">
+    <section id="hero" style="padding:60px 0;">
+      <h1 style="font-size:36px; margin:0 0 12px;">Triotec Engenharia</h1>
+      <p style="max-width:780px;">Soluções em engenharia, construções, reformas e manutenções em Ribeirão Preto — SP. Projetos com foco em qualidade, segurança e prazo.</p>
+      <p style="margin-top:18px;"><a class="btn-cta" href="#contato">Solicitar Orçamento</a></p>
+    </section>
+
+    <section id="servicos" style="margin-top:40px;">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Engenharia</li>
+        <li>Construções</li>
+        <li>Reformas</li>
+        <li>Manutenções</li>
+      </ul>
+    </section>
+
+    <section id="projetos" style="margin-top:40px;">
+      <h2>Projetos (exemplos)</h2>
+      <p>Apresentamos alguns projetos — imagens e descrições podem ser editadas via Netlify CMS depois do deploy.</p>
+      <div style="display:flex; gap:16px; flex-wrap:wrap;">
+        <div style="background:var(--neutral-light); padding:12px; border-radius:8px; color:#222; width:240px;">Projeto A (placeholder)</div>
+        <div style="background:var(--neutral-light); padding:12px; border-radius:8px; color:#222; width:240px;">Projeto B (placeholder)</div>
+        <div style="background:var(--neutral-light); padding:12px; border-radius:8px; color:#222; width:240px;">Projeto C (placeholder)</div>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:40px;">
+      <h2>Contato</h2>
+
+      <!-- Netlify Forms setup -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none"> <label>Don’t fill this out: <input name="bot-field"></label></p>
+
+        <p><label>Nome<br><input type="text" name="name" required></label></p>
+        <p><label>E-mail<br><input type="email" name="email" required></label></p>
+        <p><label>Telefone<br><input type="text" name="phone"></label></p>
+        <p><label>Mensagem<br><textarea name="message" rows="4"></textarea></label></p>
+
+        <p><label><input type="checkbox" name="consent" required> Eu concordo com o armazenamento dos meus dados para contato (LGPD).</label></p>
+
+        <p><button type="submit" class="btn-cta">Enviar</button></p>
+      </form>
+
+      <p style="margin-top:12px;">Ou envie e-mail diretamente: <a href="mailto:eng.triotec@gmail.com" style="color:var(--brand-cream);">eng.triotec@gmail.com</a></p>
+
+    </section>
+  </main>
+
+  <footer style="padding:24px; text-align:center; background:rgba(0,0,0,0.05);">
+    <small>Triotec Engenharia — Ribeirão Preto, SP — eng.triotec@gmail.com</small>
+  </footer>
+
+  <!-- Netlify CMS (admin) link -->
+  <div style="position:fixed; right:12px; bottom:12px;">
+    <a href="/admin/" class="btn-cta">Entrar no painel</a>
+  </div>
+</body>
+</html>
